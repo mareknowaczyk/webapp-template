@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your new web application</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    </head>
+    <body>
+       <div ng-app="myApp" ng-controller="myCtrl" class=container>
+            <div class="row">
+                <div class="page-header">  
+                    <h1>
+                        <span class="glyphicon glyphicon-leaf"></span> 
+                        Your app title 
+                        <small><ul>
+                                <li>your app attribute, and
+                                <li>another one
+                            </ul>
+                        </small>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="col-xs-12">            
+                <label for="helloText">Hello text:</label> <input ng-model="helloText">            
+            </div>
+            <div class="col-xs-12">
+                {{ helloText }}
+            </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) {
+                $scope.helloText = "Hello world!";
+            });            
+        </script>
+
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

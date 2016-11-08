@@ -1,0 +1,27 @@
+{
+  "name": "webapp-template",
+  "authors": [
+    "Marek Nowaczyk <marekn.home@gmail.com>"
+  ],
+  "description": "Template dla webowej aplikacji html + js + angular.js + bootstrap",
+  "main": "index.html",
+  "keywords": [
+    "html",
+    "javascript",
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
